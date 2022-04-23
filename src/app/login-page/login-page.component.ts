@@ -23,9 +23,9 @@ export class LoginPageComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log("testi");
-    console.log(this.loginForm);
-    console.log(this.loginForm.value);
+    // console.log("testi");
+    // console.log(this.loginForm);
+    // console.log(this.loginForm.value);
 
     var attempSuccessful = this.loginService.logInRequest(this.loginForm.value.EMail , this.loginForm.value.Password);
 

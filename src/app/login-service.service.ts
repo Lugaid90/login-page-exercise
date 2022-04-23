@@ -18,13 +18,13 @@ export class LoginServiceService {
   constructor() { }
 
   logInRequest(email : string , password : string) : boolean {
-    console.log("LogIn Request started with " + email + " and " + password);
+    // console.log("LogIn Request started with " + email + " and " + password);
     for (var account of this.registered_accounts){
-      console.log(account);
-      console.log({EMail:email , Password: password });
+      // console.log(account);
+      // console.log({EMail:email , Password: password });
       if (account.EMail === email && account.Password === password ){
-        console.log("Match Found with ");
-        console.log(account);
+        // console.log("Match Found with ");
+        // console.log(account);
         this.logged_in = true;
         this.logged_in_account = account;
         break;
